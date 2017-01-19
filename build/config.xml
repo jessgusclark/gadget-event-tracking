@@ -2,7 +2,7 @@
 
 <config>
     <!-- The title that appears in the gadget's title bar. -->
-    <entry key="title" label="Title">Gadget Starter</entry>
+    <entry key="title" label="Title">Google Event Tracking</entry>
     
     <!-- The URL of an icon image. -->
     <entry key="icon" private="true">http://commons.omniupdate.com/favicon.ico</entry>
@@ -15,14 +15,14 @@
     
     <!-- Current supported types are "dashboard" and "sidebar". If you want your gadget to appear
          in both places, enter "dashboard, sidebar". -->
-    <entry key="types" private="true">dashboard, sidebar</entry>
+    <entry key="types" private="true">sidebar</entry>
     
     <!-- This entry, if present, causes OU Campus to forward notifications of the specified 
          type(s) to the gadget. Enter one or more notification types separated by commas. -->
     <entry key="notifications" private="true">message</entry>
     
     <!-- For sidebar gadgets only. See explanation at bottom. -->
-    <!-- <entry key="sidebar_context" private="true">edit</entry> -->
+    <entry key="sidebar_context" private="true">edit</entry>
     
     <!-- For dashboard gadgets only. Determines the width of the gadget in columns. 
          Can be 1, 2, or 3. -->
@@ -33,8 +33,9 @@
     
     <!-- Below is a custom config entry. Custom entries are for the gadget's internal use only.
          You can add as many custom entries as you wish. The "private" and "overwritable" flags
-         apply to custom entries too. -->
-    <entry key="font_size" label="Font Size" overwritable="true">14px</entry>
+         apply to custom entries too.-->
+    <entry key="default_category" label="Default Category" overwritable="true">link</entry> 
+    <entry key="default_action" label="Default Action" overwritable="true">click</entry> 
 
 </config>
 
