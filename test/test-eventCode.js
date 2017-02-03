@@ -11,12 +11,21 @@ describe('event code', function() {
 
 	var eventCode = app.eventCode;
 
-	it('should return full code with event', function(){
-		var result = eventCode.getFullCode("taco", "cat", "act", "lbl");
-		var expected = '<a href="#" onClick="ga(\'send\', {   hitType: \'event\',   eventCategory: \'cat\',   eventAction: \'act\',   eventLabel: \'lbl\' });">taco</a>';
+	it('should return full code with event when an array', function(){
+
+		var result = eventCode.getCode(["http://unco.edu", "taco", "cat", "act", "lbl"]);
+		var expected = '<a href="http://unco.edu" onClick="ga(\'send\', {   hitType: \'event\',   eventCategory: \'cat\',   eventAction: \'act\',   eventLabel: \'lbl\' });">taco</a>';
 
 		assert.equal( expected, result );
-		
+
+	});
+
+	it('should return full code with event when passed variables', function(){
+		var result = eventCode.getFullCode("http://unco.edu", "taco", "cat", "act", "lbl");
+		var expected = '<a href="http://unco.edu" onClick="ga(\'send\', {   hitType: \'event\',   eventCategory: \'cat\',   eventAction: \'act\',   eventLabel: \'lbl\' });">taco</a>';
+
+		assert.equal( expected, result );
+
 	});
 
 	it('should return event code', function(){

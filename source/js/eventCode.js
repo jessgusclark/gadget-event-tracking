@@ -2,8 +2,13 @@ var eventCode = (function(){
 
 	return {
 
-		getFullCode : function(text, category, action, label){
-			return '<a href="#" onClick="' + this.getEventCode(category, action, label) + '">' + text + '</a>';
+		getCode: function(array){
+			//incomming array: url, text, category, action, label
+			return this.getFullCode(array[0], array[1], array[2], array[3], array[4]);
+		},
+
+		getFullCode : function(url, text, category, action, label){
+			return '<a href="' + url + '" onClick="' + this.getEventCode(category, action, label) + '">' + text + '</a>';
 		},
 
 		getEventCode : function(category, action, label){
