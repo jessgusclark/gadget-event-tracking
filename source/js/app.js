@@ -1,22 +1,14 @@
 $(document).ready(function () {
-    /* 
-        First, call `gadget.ready()` to make sure the gadget has obtained an API token
-        to use for making OU Campus API calls. If your gadget will not make any API calls,
-        you can dispense with this method. This asynchronous method returns a jQuery
-        Promise object.
-        
-        Then, call `gadget.fetch()` to get the gadget's config data from the system. This
-        method, which also returns a jQuery Promise object, uses the API, which is why it
-        needs to follow the call to `gadget.ready()`.
-        
-        If you don't need the config data, you don't need to call gadget.fetch().
-    */
+    
+    var apihost;
+    var token;
+    
     gadget.ready().then(gadget.fetch).then(function () {
         
-        $("#main").addClass( gadget.get('place') );
+        // Set global variables:
+        apihost = gadget.get('apihost');
+        token = gadget.get('token');
 
-        $("#status").html("Gadget Loaded.");
-        
     });
 });
 
