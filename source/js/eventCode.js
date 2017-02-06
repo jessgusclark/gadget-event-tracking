@@ -13,7 +13,10 @@ var eventCode = (function(){
 
 		getEventCode : function(category, action, label){
 
-			var onClick = "ga('send', {   hitType: 'event',   eventCategory: '" + category + "',   eventAction: '" + action + "',   eventLabel: '" + label + "' });";
+			var onClick = "ga('send', {   hitType: 'event',   eventCategory: '" 
+							+ category.replace("'", "") + "',   eventAction: '" 
+							+ action.replace("'", "") + "',   eventLabel: '" 
+							+ label.replace("'", "") + "' });";
 
 			return onClick;
 

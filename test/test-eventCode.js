@@ -37,4 +37,13 @@ describe('event code', function() {
 
 	});
 
+	it('should return event code and encode qutotes', function(){
+		var result = eventCode.getEventCode("cat's", "act's", "lbl's");
+		var expected = "ga('send', {   hitType: 'event',   eventCategory: 'cats',   eventAction: 'acts',   eventLabel: 'lbls' });";
+
+		assert.equal( expected, result );
+
+	});
+
+
 });
