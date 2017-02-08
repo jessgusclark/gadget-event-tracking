@@ -17,9 +17,9 @@ $(document).ready(function () {
     $("#createLink").click(function(){
         console.log("CreateLink Clicked!");
 
-        // Ask the questions: 
-        var p = new prompts();
-        var answers = p.ask();
+        // Collect items from form:
+        var a = new compileAnswers();
+        answers = a.compile();
 
         // Create the link code:
         var c = new eventCode();
@@ -27,6 +27,7 @@ $(document).ready(function () {
 
         // Insert code into wysiwyg:
         console.log("code:", code);
+        gadget.oucInsertAtCursor(code);
     });
 
 });
