@@ -10,8 +10,8 @@ var rename = require("gulp-rename");
 var mocha = require('gulp-mocha');
 
 //default task:
-gulp.task('default', ['sass', 'scripts', 'test']);
-gulp.task('build', ['sass', 'scripts', 'test', 'watch']);
+gulp.task('default', ['sass', 'scripts', 'test', 'watch']);
+gulp.task('build', ['sass', 'scripts', 'test']);
 
 // watchers:
 gulp.task('watch', function() {
