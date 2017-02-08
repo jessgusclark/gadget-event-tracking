@@ -5,13 +5,13 @@
     <entry key="title" label="Title">Google Event Tracking</entry>
     
     <!-- The URL of an icon image. -->
-    <entry key="icon" private="true">http://commons.omniupdate.com/favicon.ico</entry>
+    <entry key="icon" private="true">icon-link-6</entry>
     
     <!-- The description that appears in the gadget chooser. -->
-    <entry key="description" private="true">What my gadget does.</entry>
+    <entry key="description" private="true">Inserts links into the editor that have Google Event Tracking associated with them.</entry>
     
     <!-- The URL of a thumbnail image to appear in the gadget chooser. -->
-    <entry key="thumbnail" private="true">http://fakeimg.pl/96/</entry>
+    <entry key="thumbnail" private="true">https://www.unco.edu/omni/gadgets/event-tracking/img/preview.jpg</entry>
     
     <!-- Current supported types are "dashboard" and "sidebar". If you want your gadget to appear
          in both places, enter "dashboard, sidebar". -->
@@ -29,7 +29,7 @@
     <entry key="columns" private="true">1</entry>
     
     <!-- For sidebar gadgets only. Determines the initial height of the gadget in pixels. -->
-    <entry key="initial_height" private="true">290</entry>
+    <entry key="initial_height" private="true">260</entry>
     
     <!-- Below is a custom config entry. Custom entries are for the gadget's internal use only.
          You can add as many custom entries as you wish. The "private" and "overwritable" flags
