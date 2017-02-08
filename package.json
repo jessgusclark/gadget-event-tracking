@@ -1,7 +1,7 @@
 {
-  "name": "gadget-starter",
+  "name": "gadget-event-tracking",
   "version": "1.0.0",
-  "description": "Modified Gadget Starter",
+  "description": "Google Event Tracking Gadget for OUCampus",
   "main": "build/",
   "directories": {
     "test": "tests"
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jessgusclark/gadget-starter.git"
+    "url": "git+https://github.com/jessgusclark/gadget-event-tracking.git"
   },
-  "author": "Jesse Clark, OmniUpdate",
+  "author": "Jesse Clark, jesse.clark@unco.edu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jessgusclark/gadget-starter/issues"
+    "url": "https://github.com/jessgusclark/gadget-event-tracking/issues"
   },
-  "homepage": "https://github.com/jessgusclark/gadget-starter#readme",
+  "homepage": "https://github.com/jessgusclark/gadget-event-tracking",
   "devDependencies": {
     "chai": "^3.5.0",
     "gulp": "^3.9.1",

@@ -11,7 +11,7 @@
     <entry key="description" private="true">Inserts links into the editor that have Google Event Tracking associated with them.</entry>
     
     <!-- The URL of a thumbnail image to appear in the gadget chooser. -->
-    <entry key="thumbnail" private="true">https://www.unco.edu/omni/gadgets/event-tracking/img/preview.jpg</entry>
+    <entry key="thumbnail" private="true">https://jessgusclark.github.io/gadget-event-tracking/build/img/preview.jpg</entry>
     
     <!-- Current supported types are "dashboard" and "sidebar". If you want your gadget to appear
          in both places, enter "dashboard, sidebar". -->
@@ -33,9 +33,9 @@
     
     <!-- Below is a custom config entry. Custom entries are for the gadget's internal use only.
          You can add as many custom entries as you wish. The "private" and "overwritable" flags
-         apply to custom entries too.-->
+         apply to custom entries too.
     <entry key="default_category" label="Default Category" overwritable="true">link</entry> 
-    <entry key="default_action" label="Default Action" overwritable="true">click</entry> 
+    <entry key="default_action" label="Default Action" overwritable="true">click</entry> -->
 
 </config>
 
