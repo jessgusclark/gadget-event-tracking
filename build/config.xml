@@ -11,7 +11,7 @@
     <entry key="description" private="true">Inserts links into the editor that have Google Event Tracking associated with them.</entry>
     
     <!-- The URL of a thumbnail image to appear in the gadget chooser. -->
-    <entry key="thumbnail" private="true">https://www.unco.edu/omni/gadgets/event-tracking/img/preview.jpg</entry>
+    <entry key="thumbnail" private="true">https://jessgusclark.github.io/gadget-event-tracking/build/img/preview.jpg</entry>
     
     <!-- Current supported types are "dashboard" and "sidebar". If you want your gadget to appear
          in both places, enter "dashboard, sidebar". -->
