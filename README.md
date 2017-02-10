@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jessgusclark/gadget-event-tracking.svg?branch=master)](https://travis-ci.org/jessgusclark/gadget-event-tracking)
+
 An OUCampus gadget that allows content authors to insert a link with a Google event attached to it. 
 
 ## Gadget Preview
