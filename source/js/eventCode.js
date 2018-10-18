@@ -8,7 +8,7 @@ var eventCode = (function(){
 		},
 
 		getFullCode : function(url, text, category, action, label){
-			return '<a href="' + url + '" onClick="' + this.getEventCode(category, action, label) + '">' + text + '</a>';
+			return '<a href="' + url + '" class="gtmclick" onClick="' + this.getEventCode(category, action, label) + '">' + text + '</a>';
 		},
 
 		getEventCode : function(category, action, label){

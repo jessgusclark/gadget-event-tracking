@@ -14,7 +14,7 @@ describe('event code', function() {
 	it('should return full code with event when an array', function(){
 
 		var result = eventCode.getCode(["http://unco.edu", "taco", "cat", "act", "lbl"]);
-		var expected = '<a href="http://unco.edu" onClick="ga(\'send\', {   hitType: \'event\',   eventCategory: \'cat\',   eventAction: \'act\',   eventLabel: \'lbl\' });">taco</a>';
+		var expected = '<a href="http://unco.edu" class="gtmclick" onClick="ga(\'send\', {   hitType: \'event\',   eventCategory: \'cat\',   eventAction: \'act\',   eventLabel: \'lbl\' });">taco</a>';
 
 		assert.equal( expected, result );
 
@@ -22,7 +22,7 @@ describe('event code', function() {
 
 	it('should return full code with event when passed variables', function(){
 		var result = eventCode.getFullCode("http://unco.edu", "taco", "cat", "act", "lbl");
-		var expected = '<a href="http://unco.edu" onClick="ga(\'send\', {   hitType: \'event\',   eventCategory: \'cat\',   eventAction: \'act\',   eventLabel: \'lbl\' });">taco</a>';
+		var expected = '<a href="http://unco.edu" class="gtmclick" onClick="ga(\'send\', {   hitType: \'event\',   eventCategory: \'cat\',   eventAction: \'act\',   eventLabel: \'lbl\' });">taco</a>';
 
 		assert.equal( expected, result );
 
