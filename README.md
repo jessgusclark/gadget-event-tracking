@@ -10,11 +10,12 @@ An OUCampus gadget that allows content authors to insert a link with a Google ev
 The final code that is inserted into the page looks like this:
 
 ```
-<a href="http://www.google.com" onclick="ga('send', {hitType: 'event',
-                                                      eventCategory: 'link',
-                                                      eventAction: 'click',
-                                                      eventLabel: 'google'
-                                                     });">Google!</a>
+<a href="http://www.google.com" class="gtmclick"
+		onclick="ga('send', {hitType: 'event',
+        	eventCategory: 'link',
+        	eventAction: 'click',
+        	eventLabel: 'google'
+         });">Google!</a>
 ```
 
 Code is based off of analytics.js tracking. [More information on Google's Event Tracking here](https://developers.google.com/analytics/devguides/collection/analyticsjs/events). If you are running an older version of Google Analytics, this gadget will not work.
@@ -22,6 +23,10 @@ Code is based off of analytics.js tracking. [More information on Google's Event 
 ## Test the link
 
 To test if the Google event fires, publish out the page and click on the link. Next in Google Analytics, navigate to the “Real-Time”/”Events” and see if the Event Category and Action happened. 
+
+## Google Tag Manager
+
+This code will not trigger events when the pageview is created via Google Tag Manager. To 'fix' this, the class of `gtmclick` has been added to the link. In Google Tag Manager, a trigger should be created to capture clicks with a class of `gtmclick`.
 
 ## Install
 
